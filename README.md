@@ -1,2 +1,187 @@
-# pvzOZON
-сайт пвз ОЗОНа
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пункт выдачи Ozon | с. Второво</title>
+    <style>
+        /* Общие стили */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6fa;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Шапка сайта */
+        header {
+            background-color: #005bff; /* Фирменный синий Ozon */
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            border-bottom: 4px solid #f91155; /* Розовый акцент Ozon */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 5px 0 0 0;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        /* Главный баннер */
+        .hero {
+            background: linear-gradient(135deg, #005bff 0%, #f91155 100%);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: inset 0 0 100px rgba(0,0,0,0.2);
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            margin: 0 0 15px 0;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin: 0 auto;
+            max-width: 600px;
+            line-height: 1.5;
+        }
+
+        /* Блок с карточками */
+        .container {
+            max-width: 1000px;
+            margin: -30px auto 40px auto; /* Наползание на баннер для красоты */
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Стили кликабельных карточек */
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 5px solid #005bff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none; /* Убираем подчеркивание, так как вся карточка — ссылка */
+            color: inherit;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            border-top-color: #f91155;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #005bff;
+            font-size: 18px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.4;
+            margin-bottom: 0;
+        }
+
+        /* Подвал (Контакты) */
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 30px 10px;
+            margin-top: auto;
+        }
+
+        footer h3 {
+            margin: 0 0 10px 0;
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        footer a {
+            color: #f91155;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <h1>OZON</h1>
+        <p>Пункт выдачи заказов</p>
+    </header>
+
+    <!-- Главный баннер -->
+    <div class="hero">
+        <h2>Ждем вас за покупками!</h2>
+        <p>Быстрая доставка, удобная примерка и вежливый персонал в вашем селе.</p>
+    </div>
+
+<!-- Кликабельные элементы (Карточки-ссылки) -->
+    <div class="container">
+        
+        <!-- Карточка 1: Адрес с ссылкой на карты -->
+        <a class="card" href="https://yandex.ru/maps/?ll=40.795673%2C56.266453&mode=poi&poi%5Bpoint%5D=40.795284%2C56.266656&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D72286821239&z=19.4" target="_blank">
+            <h3>Наш адрес</h3>
+            <p>Владимирская обл., Камешковский р-н, с. Второво, ул. Советская, д. 22Б, 601310.<br><strong>Нажмите, чтобы открыть карту</strong></p>
+        </a>
+
+        <!-- Карточка 2: График работы -->
+        <div class="card" style="cursor: default;">
+            <h3>График работы</h3>
+            <p>Ежедневно<br><strong>с 10:00 до 21:00</strong><br>Без выходных.</p>
+        </div>
+
+        <!-- Карточка 3: Кнопка «Как забрать» -->
+        <a class="card" href="https://www.ozon.ru/my/orderlist" target="_blank">
+            <h3>Мои заказы</h3>
+            <p>Проверить статус отправлений, узнать штрих-код для получения и перейти в личный кабинет Ozon.</p>
+        </a>
+
+    </div>
+
+    <!-- Подвал -->
+    <footer>
+        <h3>Связаться с нами</h3>
+        <p>Возникли вопросы? Звоните:</p>
+        <!-- Кликабельный телефон -->
+        <p><a href="tel:+74952321000">+7 (495) 232-10-00</a></p>
+    </footer>
+
+</body>
+</html>
